@@ -272,6 +272,28 @@ button:hover{
     border-radius: 50%;
 }
 
+.molo{
+    margin-top: 30px;
+    background: #ede6e6;
+    height: 80px;
+}
+
+.ko{
+    text-align: center;
+    padding-top: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #000;
+}
+
+@media(max-width:950px){
+    .molo{
+        height: 110px;
+    }
+    .ko{
+        font-size: 14px;
+        margin: 0 24px;
+    }
+}
 footer{
     background: grey;
     margin-top: 30px;
