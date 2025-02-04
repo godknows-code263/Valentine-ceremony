@@ -1,0 +1,295 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    width: 100%;
+    height: 100vh;
+    background: #eee;
+    height: 80px;
+    top: 0;
+    position: sticky;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 24px;
+    padding-top: 20px;
+}
+
+h1{
+    font-size: 2rem;
+    color: #000;
+    font-style: italic;
+}
+
+ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 10px 15px;
+}
+
+a{
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #000;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+a:hover{
+    border-bottom: 2px solid blue;
+    transition: 0.3s;
+}
+
+.hambuger{
+    cursor: pointer;
+    display: none;
+}
+
+.bar{
+    width: 25px;
+    display: block;
+    height: 3px;
+    margin: 5px auto;
+    --webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background: #000;
+}
+
+@media(max-width:750px){
+    .hambuger{
+        display: block;
+    }
+
+    .hambuger.active.bar:nth-child(2){
+        opacity: 0;
+    }
+
+    .hambuger.active.bar:nth-child(1){
+        transform: translate(8px) rotate(45deg);
+    }
+
+    .hambuger.active.bar:nth-child(3){
+        transform: translate(-8px) rotate(-45deg);
+    }
+
+    ul li{
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        gap: 10px;
+        display: grid;
+        background-color: #eee;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+    }
+
+    .nav-item{
+        margin: 16px 0;
+    }
+
+    ul li.active{
+        left: 0;
+    }
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background: url(./image/img-2.jpg);
+    background-position: center;
+    color: #fff;
+}
+
+.explore{
+    text-align: center;
+    padding-top: 250px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.explore p{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+span{
+    color: red;
+}
+
+h2{
+    font-size: 2rem;
+    padding-bottom: 20px;
+    font-style: italic;
+}
+
+button{
+    margin-top: 20px;
+    width: 150px;
+    height: 40px;
+    border: none;
+    border-radius: 25px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+button:hover{
+    transition: all 0.3s ease-in-out;
+    background: blue;
+}
+
+@media(max-width:950px){
+    .explore p{
+        font-size: 14px;
+        font-weight: bold;
+    }
+}
+
+.nobody{
+    margin-top: 30px;
+    text-align: center;
+}
+
+.wall{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 24px;
+}
+
+.home img{
+    width: 95%;
+    border-radius: 25px;
+}
+
+.home img:hover{
+    transition: 0.3s;
+    cursor: pointer;
+    outline: 0;
+}
+
+@media(max-width:950px){
+    .wall{
+        display: grid;
+    }
+
+    .home img{
+        border-radius: 25px;
+    }
+}
+
+
+.norway{
+    text-align: center;
+    margin-top: 18px;
+    font-style: italic;
+    margin: 0 24px;
+}
+
+.norway h3{
+    padding-bottom: 15px;
+    font-size: 2rem;
+    font-style: italic;
+}
+
+@media(max-width:950px){
+    .norway{
+        margin-top: 20px;
+    }
+
+    .norway p{
+        flex-wrap: wrap;
+        font-size: 14px;
+    }
+}
+
+.ho{
+    width: 100%;
+    height: 100vh;
+    background: url(./image/Untitled.jpg);
+    margin-top: 20px;
+    background-position: center;
+    text-align: center;
+}
+
+.heaven p{
+    text-align: center;
+    padding-top: 300px;
+    font-size: 3rem;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@media(max-width:950px){
+    .heaven p{
+        font-size: 25px;
+    }
+}
+
+.phone{
+    margin-top: 50px;
+    background: #eee;
+    height: 150px;
+}
+.jone{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: auto;
+}
+
+.jone p{
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 50px;
+}
+
+@media(max-width:950px){
+    .phone{
+        height: 200px;
+    }
+    .jone p{
+        font-size: 14px;
+        margin: 0 24px;
+    }
+}
+
+.come{
+    margin-top: 40px;
+}
+
+.monday{
+    text-align: center;
+}
+
+.monday img{
+    max-width: 30%;
+    border-radius: 50%;
+}
+
+footer{
+    background: grey;
+    margin-top: 30px;
+    height: 200px;
+}
+
+.low{
+    text-align: center;
+    font-style: italic;
+    color: #fff;
+}
+
+.low p{
+    padding-top: 80px;
+}
+
+@media(max-width:950px){
+    footer{
+        height: 250px;
+    }
+}
